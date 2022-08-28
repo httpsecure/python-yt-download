@@ -1,3 +1,3 @@
-# python-yt-download 🐍
+# Bloated boring youtube downloader🐍
 
-first you must install tkinter & pytube via pip 
+first you must install tkinter & pytube via pip and then go 
