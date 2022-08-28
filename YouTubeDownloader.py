@@ -18,7 +18,7 @@ def onClick():
         destination = str(got_path)
         vid.download(destination)
         os.startfile(got_path)
-        return m_box.showinfo('Selesai di Download.', f"Video Selesai di di Download {got_path}/{yt.title}")
+        return m_box.showinfo('Done.', f"Done {got_path}/{yt.title}")
 
 
 threads = []
@@ -31,13 +31,13 @@ def startThredProcess():
 
 win = tk.Tk()
 win.geometry("500x400")
-win.title("Heksadesimal YouTube Downloader")
+win.title("Bloated YouTube Downloader")
 win.minsize(width=650, height=500)
 win.maxsize(width=650, height=500)
 frame = ttk.LabelFrame(win)
 frame.grid(row=0, column=0, padx=90, pady=90)
 
-get_info = ttk.Label(frame, text="Silahkan Masukan Link Videonya di sini: ")
+get_info = ttk.Label(frame, text="link video , ctrl + v: ")
 get_info.grid(row=0, column=0, sticky=tk.W)
 
 link = tk.StringVar()
@@ -46,7 +46,7 @@ yt_link = ttk.Entry(frame, width=60, textvariable=link)
 yt_link.grid(row=1, columnspan=3, padx=0, pady=3)
 yt_link.focus()
 
-get_info = ttk.Label(frame, text="Lokasi Penyimpanan : ")
+get_info = ttk.Label(frame, text="storage path/ manual write : ")
 get_info.grid(row=3, column=0, sticky=tk.W)
 
 path = tk.StringVar()
